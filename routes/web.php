@@ -54,4 +54,5 @@ Route::group(['middleware' => ['admin']], function () {
     Route::get('/delete-batch/{id}', [CourseController::class, 'deleteBatch'])->name('delete_batch');
     
     Route::get('/user-profile', [HomeController::class, 'adminProfile'])->name('user_profile');
+    Route::get('/notifications', [StudentController::class, 'Notification'])->name('notification');
 });

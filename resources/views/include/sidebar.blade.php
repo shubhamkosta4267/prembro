@@ -43,7 +43,7 @@
                         <li><a href="{{route('add_course')}}">add courses</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a href="sample-page.html" class="nav-link "><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Sample page</span></a></li>
+                <li class="nav-item"><a href="{{ route('notification') }}" class="nav-link "><span class="pcoded-micon"><i class="icon feather icon-bell"></i></span><span class="pcoded-mtext">Notification</span></a></li>
 
             </ul>            
         </div>

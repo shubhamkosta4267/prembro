@@ -255,4 +255,12 @@ class StudentController extends Controller
             }
         }
     }
+
+    public function Notification(){
+        $result['notification'] = StudentInstallment::orderBy('student_installments.created_at', 'desc')
+        ->join('students', 'students.id', '=', 'student_installments.student_id')
+        ->select('student_installments.*', 'students.name', 'students.image')
+        ->get();
+        return view('notifications')->with($result);
+    }
 }
